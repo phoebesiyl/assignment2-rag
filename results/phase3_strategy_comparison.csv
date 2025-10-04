@@ -1,0 +1,10 @@
+Performance Comparison:
+   Strategy  F1 Score  Exact Match
+      basic 53.590829         49.0
+instruction 51.288348         48.0
+    persona 51.200677         47.0
+        cot 11.730022          0.0
+
+🏆 BEST PERFORMING STRATEGY: BASIC
+   F1 Score: 53.59
+   Exact Match: 49.00
