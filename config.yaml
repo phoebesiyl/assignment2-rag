@@ -1,0 +1,32 @@
+
+# Phase 2 RAG Configuration
+
+dataset:
+  name: "rag-datasets/rag-mini-wikipedia"
+  corpus_split: "text-corpus"
+  qa_split: "question-answer"
+  cache_dir: "./data/cache"
+
+embedding:
+  model_name: "all-MiniLM-L6-v2"
+  embedding_dim: 384
+  batch_size: 32
+  normalize: true
+  device: "cpu"  # or "cuda" if GPU available
+
+vector_db:
+  index_type: "IndexFlatIP"
+  index_path: "./data/processed/faiss_index.bin"
+  metadata_path: "./data/processed/metadata.json"
+  save_index: true
+
+retrieval:
+  default_top_k: 3
+  similarity_threshold: 0.0
+  return_scores: true
+
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+  log_to_file: true
+  log_file: "./logs/rag_pipeline.log"
