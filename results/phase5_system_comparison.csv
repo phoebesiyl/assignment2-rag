@@ -1,0 +1,9 @@
+System Performance:
+                          system        f1  exact_match
+               Baseline (top-10) 55.820755         50.0
+             With Reranking Only 57.185854         52.0
+With Query Rewriting + Reranking 57.185854         52.0
+
+Baseline F1: 55.82
+Best Enhanced F1: 57.19
+Improvement: 1.37 points
