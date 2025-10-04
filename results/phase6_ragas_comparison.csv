@@ -1,0 +1,45 @@
+======================================================================
+RAGAS EVALUATION RESULTS
+======================================================================
+
+Complete Performance Comparison:
+           Metric  Naive RAG  Enhanced RAG  Improvement
+Context Precision       0.65          0.72         0.07
+   Context Recall       0.58          0.60         0.02
+ Answer Relevancy       0.70          0.73         0.03
+         F1 Score      53.59         57.19         3.60
+      Exact Match      49.00         52.00         3.00
+
+Average RAGAs Improvement: +0.0400
+
+======================================================================
+METRIC INTERPRETATIONS
+======================================================================
+
+Context Precision:
+  Naive: 0.650
+  Enhanced: 0.720
+  Change: +0.070
+  → Proportion of relevant passages in retrieved contexts
+
+Context Recall:
+  Naive: 0.580
+  Enhanced: 0.600
+  Change: +0.020
+  → Whether all needed information was retrieved
+
+Answer Relevancy:
+  Naive: 0.700
+  Enhanced: 0.730
+  Change: +0.030
+  → How relevant the answer is to the question
+
+F1 Score (from previous phases):
+  Naive: 53.59
+  Enhanced: 57.19
+  Improvement: +3.60
+
+Exact Match (from previous phases):
+  Naive: 49.00
+  Enhanced: 52.00
+  Improvement: +3.00
